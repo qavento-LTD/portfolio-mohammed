@@ -36,7 +36,8 @@
 }
 
 body {
-	background: var(--bg-dark-blue);;
+	background: var(--bg-dark-blue);
+	;
 }
 
 h1,
@@ -210,7 +211,8 @@ main {
 }
 
 #hero a,
-nav a:nth-child(6), .contacts a{
+nav a:nth-child(6),
+.contacts a {
 	border: 1.8px solid var(--button);
 	padding: 16px 64px;
 	border-radius: 4px;
@@ -286,7 +288,8 @@ nav a:nth-child(6):hover {
 	width: 70%;
 	transition: all .3s ease;
 }
-.about_img div:after{
+
+.about_img div:after {
 	content: "";
 	position: relative;
 	border: 1px solid var(--primary-heavenly);
@@ -337,14 +340,14 @@ nav a:nth-child(6):hover {
 
 /* ===== animation relod ===== */
 .reveal {
-  opacity: 0;
-  transform: translateY(60px);
-  transition: all 0.8s ease;
+	opacity: 0;
+	transform: translateY(60px);
+	transition: all 0.8s ease;
 }
 
 .reveal.active {
-  opacity: 1;
-  transform: translateY(0);
+	opacity: 1;
+	transform: translateY(0);
 }
 
 
@@ -352,9 +355,9 @@ nav a:nth-child(6):hover {
 
 
 /* ======== company ==========*/
-.company_name{
+.company_name {
 	padding: 32px 0;
-
+	
 }
 
 
@@ -362,7 +365,7 @@ nav a:nth-child(6):hover {
 
 
 /* ======= projects ======== */
-#projects{
+#projects {
 	position: relative;
 	display: flex;
 	margin: 24px 0;
@@ -370,14 +373,16 @@ nav a:nth-child(6):hover {
 	overflow: hidden;
 	height: 60vh;
 }
-#projects:after{
+
+#projects:after {
 	content: "";
 	width: 100%;
 	height: 100%;
 	position: absolute;
 	background: #0F172AF0;
 }
-.project{
+
+.project {
 	position: absolute;
 	z-index: 2;
 	display: flex;
@@ -388,13 +393,16 @@ nav a:nth-child(6):hover {
 	height: 100%;
 	padding: 24px;
 }
-.project h3{
+
+.project h3 {
 	color: var(--button);
 }
-.project p{
+
+.project p {
 	color: var(--texr-accent);
 	line-height: 32px;
 }
+
 .icon {
 	display: flex;
 	gap: 18px;
@@ -406,15 +414,17 @@ nav a:nth-child(6):hover {
 
 
 /* ======= contact me ======== */
-.contacts{
+.contacts {
 	margin-top: 32px;
 	text-align: center;
 }
-.contacts h2{
+
+.contacts h2 {
 	font-size: 32px;
 	color: var(--button);
 }
-.contacts p{
+
+.contacts p {
 	color: var(--texr-accent);
 	margin-bottom: 64px;
 	margin-top: 24px;
@@ -426,21 +436,23 @@ nav a:nth-child(6):hover {
 
 
 /* ======= footer ======= */
-footer{
+footer {
 	margin: 150px 0;
 	text-align: center;
 	margin-bottom: 20px;
 	position: relative;
 	bottom: 32px;
 }
-footer div{
+
+footer div {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	gap: 40px;
 	margin-bottom: 24px;
 }
-footer a{
+
+footer a {
 	color: #94A3B8;
 	margin-bottom: 40px;
 }

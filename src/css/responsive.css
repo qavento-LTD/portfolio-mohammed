@@ -1,0 +1,34 @@
+@media (min-width: 678px) and (max-width: 990px) {
+	.menu {
+		display: flex;
+	}
+	
+	nav {
+		position: relative;
+		right: 0;
+		background: transparent;
+	}
+	
+	nav ul {
+		display: flex;
+		flex-direction: row;
+	}
+	
+	#hero {
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	#hero p, #hero h1{
+		text-align: center;
+	}
+	#hero h1{
+		line-height: 60px;
+	}
+}
+
+@media (min-width: 991px) and (max-width: 1024px) {}
+
+@media (min-width: 1025px) and (max-width: 1440px) {}
