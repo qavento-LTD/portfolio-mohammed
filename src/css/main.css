@@ -92,6 +92,12 @@ main {
 	z-index: 5;
 }
 
+.container.top{
+  top: -120px;
+}
+.container.center{
+  top: 0;
+}
 .logo img {
 	width: 60px;
 	position: relative;
@@ -128,22 +134,38 @@ main {
 	top: 12px;
 	width: 70%;
 }
-
-.menu:hover span:first-child,
-.menu:hover span:last-child {
+.menu span:nth-child(3) {
+	top: 24px;
 	width: 100%;
 }
 
 
 
+.menu.open span:first-child,
+.menu.open span:last-child {
+	top: 14px;
+}
+.menu.open span:first-child {
+	width: 100%;
+}
+.menu.open span:nth-child(1) {
+	transform: rotate(46deg);
+}
+.menu.open span:last-child {
+	transform: rotate(-46deg)
+}
+.menu.open span:nth-child(2){
+	opacity: 0;
+}
 
-
-
+.bgblur.open{
+  display: block;
+}
 
 
 /* === background blur ==== */
 
-.background-blur {
+.bgblur {
 	width: 100%;
 	height: 100%;
 	background: #0F172AA1;
@@ -165,6 +187,12 @@ nav {
 	bottom: 0;
 	width: 75%;
 	transition: all .3s ease;
+}
+nav.open{
+  right: 0;
+}
+nav.close{
+  right: -500px;
 }
 
 ul {
@@ -335,25 +363,6 @@ nav a:nth-child(6):hover {
 
 
 
-
-
-
-/* ===== animation relod ===== */
-.reveal {
-	opacity: 0;
-	transform: translateY(60px);
-	transition: all 0.8s ease;
-}
-
-.reveal.active {
-	opacity: 1;
-	transform: translateY(0);
-}
-
-
-
-
-
 /* ======== company ==========*/
 .company_name {
 	padding: 32px 0;
@@ -456,3 +465,6 @@ footer a {
 	color: #94A3B8;
 	margin-bottom: 40px;
 }
+
+
+
