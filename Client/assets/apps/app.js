@@ -6,6 +6,10 @@ const  divsnav = document.getElementById("Navdiv");
 
 const btnLang = document.createElement('button');
 
+const btnPage = document.getElementById("btn_page");
+
+const projects = document.getElementById("projectsGrid");
+
 divsnav.append(btnLang)
 btnLang.id = "lang-btn";
 btnLang.innerHTML = "العربية"
@@ -161,18 +165,23 @@ elements.forEach(element => {
 });
 
 
-// ======= project api ==========
-// const data = [{
-//     url: "https://user",
-//     alt: ""
-// },{}]
+    btnPage.addEventListener('click', () => {
+        window.location.href = "contact.html";
+    })
+
+
+async function getData(){
+    const response = await fetch("/Client/assets/project.json")
+     const data = await response.json();
+     return data;
+}
 
 
 // const project = `
-// <article class="project-card">
-//           <div class="project-img-wrapper">
+//         <article class="project-card">
+//           <div class="">
 //             <!-- صورة المشروع 1 -->
-//             <img src="${url}" alt="E-Commerce Project Preview">
+//             <img src="" alt="E-Commerce Project Preview">
 //           </div>
 //           <div class="project-info">
 //             <h3>E-Commerce Interface</h3>
@@ -186,4 +195,4 @@ elements.forEach(element => {
 //           </div>
 //         </article>`
 
-
+// projects.appendChild(project)

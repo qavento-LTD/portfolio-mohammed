@@ -2,9 +2,7 @@
    Responsive Stylesheet (responsive.css)
 ========================================== */
 
-/* 1. الشاشات الصغيرة والموبايل (أقل من 768px) */
 @media (max-width: 767px) {
-    /* تفعيل القائمة لما تضيف كلاس active بالـ JS */
     nav.active {
         top: 75px;
         right: var(--size-m);
@@ -38,8 +36,6 @@
     }
 }
 
-
-/* 2. الشاشات المتوسطة والتابلت (من 768px إلى 1023px) */
 @media (min-width: 768px) {
     #menu {
         display: none;
@@ -79,7 +75,6 @@
 }
 
 
-/* 3. الشاشات الكبيرة والـ Desktop (من 1024px وأكبر) */
 @media (min-width: 1024px) {
     #hero .hero-content h1 {
         font-size: 3.2rem;
